@@ -78,43 +78,6 @@ npm run dev
 ```
 
 ## 🏗️ Architecture & Implementation
-
-### Core Components Structure
-
-```
-src/
-├── components/
-│   ├── StudentBuddyPlanner.jsx    # Main application
-│   ├── Dashboard/
-│   │   ├── DashboardTab.jsx       # Overview & today's sessions
-│   │   ├── ProgressStats.jsx      # Statistics cards
-│   │   └── SessionCard.jsx        # Individual session component
-│   ├── Tasks/
-│   │   ├── TasksTab.jsx           # Topic creation & management
-│   │   ├── TaskForm.jsx           # New task input form
-│   │   └── TaskList.jsx           # Display existing tasks
-│   ├── StudyPlan/
-│   │   ├── StudyPlanTab.jsx       # Calendar view of sessions
-│   │   ├── SessionSchedule.jsx    # Daily session groups
-│   │   └── SessionItem.jsx        # Individual session item
-│   ├── Progress/
-│   │   ├── ProgressTab.jsx        # Analytics dashboard
-│   │   └── TechniqueChart.jsx     # Progress by technique
-│   └── Profile/
-│       ├── ProfileTab.jsx         # User settings
-│       └── TechniqueInfo.jsx      # Japanese technique descriptions
-├── hooks/
-│   ├── useStudyPlan.js           # Study plan generation logic
-│   ├── useProgress.js            # Progress calculation hooks
-│   └── useLocalStorage.js        # Persistence layer
-├── utils/
-│   ├── studyTechniques.js        # Japanese technique configurations
-│   ├── planGenerator.js          # ML-inspired scheduling algorithms
-│   └── dateHelpers.js            # Date manipulation utilities
-└── styles/
-    └── globals.css               # Additional styling
-```
-
 ### Key Implementation Details
 
 #### 1. Study Plan Generation Algorithm
@@ -427,9 +390,7 @@ const MemoizedSessionCard = React.memo(({ session, onToggle }) => {
 4. Push to branch: `git push origin feature/amazing-feature`
 5. Open Pull Request
 
-## 📄 License
 
-MIT License - see LICENSE file for details
 
 ## 🙏 Acknowledgments
 
@@ -441,3 +402,4 @@ MIT License - see LICENSE file for details
 ---
 
 **Ready to revolutionize your study routine with Japanese learning techniques? Start your journey today!** 🚀
+
